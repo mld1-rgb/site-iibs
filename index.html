@@ -21,11 +21,11 @@
       <nav class="hidden lg:flex items-center gap-8">
         <a href="index.html" class="text-white text-sm font-bold">Accueil</a>
         <a href="agenda.html" class="text-white text-sm font-bold">Agenda</a>
-        <a href="Evenement.html" class="text-white text-sm font-bold">Evenement</a>
+        <a href="evenement.html" class="text-white text-sm font-bold">Evenement</a>
         <a href="actualites.html" class="text-white text-sm font-bold">Actualites</a>
       </nav>
 
-      <a href="Inscription.html" class="hidden lg:inline-block bg-orange-500 text-white text-sm font-semibold px-5 py-2 rounded">
+      <a href="inscription.html" class="hidden lg:inline-block bg-orange-500 text-white text-sm font-semibold px-5 py-2 rounded">
         S'inscrire
       </a>
 
@@ -44,9 +44,9 @@
     <div id="mobile-menu" class="hidden lg:hidden bg-blue-950 border-t border-blue-800 px-4 sm:px-6 py-4 space-y-3">
       <a href="index.html" class="block text-white text-sm font-bold">Accueil</a>
       <a href="agenda.html" class="block text-white text-sm font-bold">Agenda</a>
-      <a href="Evenement.html" class="block text-white text-sm font-bold">Evenement</a>
-      <a href="Actualites.html" class="block text-white text-sm font-bold">Actualites</a>
-      <a href="Inscription.html" class="block bg-orange-500 text-white text-sm font-semibold px-5 py-2 rounded text-center">
+      <a href="evenement.html" class="block text-white text-sm font-bold">Evenement</a>
+      <a href="actualites.html" class="block text-white text-sm font-bold">Actualites</a>
+      <a href="inscription.html" class="block bg-orange-500 text-white text-sm font-semibold px-5 py-2 rounded text-center">
         S'inscrire
       </a>
     </div>
@@ -63,10 +63,10 @@
       Conférences, hackathons, ateliers, journées portes ouvertes — tous les événements de votre école réunis en un seul endroit.
     </p>
     <div class="fade-in flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-      <a href="Evenement.html" class="flex items-center justify-center gap-2 bg-orange-400 text-white text-sm font-semibold px-6 py-2.5 rounded-full">
+      <a href="evenement.html" class="flex items-center justify-center gap-2 bg-orange-400 text-white text-sm font-semibold px-6 py-2.5 rounded-full">
         Voir les evenements →
       </a>
-      <a href="Inscription.html" class="bg-gray-900 text-white text-sm font-semibold px-6 py-2.5 rounded-full text-center">
+      <a href="inscription.html" class="bg-gray-900 text-white text-sm font-semibold px-6 py-2.5 rounded-full text-center">
         S'inscrire Maintenant
       </a>
     </div>
@@ -210,9 +210,9 @@
         <ul class="space-y-2 text-xs text-gray-400">
           <li><a href="index.html">Accueil</a></li>
           <li><a href="agenda.html">Agenda</a></li>
-          <li><a href="Evenement.html">Evenement</a></li>
-          <li><a href="Actualites.html">Actualites</a></li>
-          <li><a href="Inscription.html">S'inscrire</a></li>
+          <li><a href="evenement.html">Evenement</a></li>
+          <li><a href="actualites.html">Actualites</a></li>
+          <li><a href="inscription.html">S'inscrire</a></li>
         </ul>
       </div>
     </div>
@@ -221,12 +221,10 @@
       <p class="text-xs text-gray-500">Institut Informatique Business School - Dakar</p>
     </div>
   </footer>
-
   <!-- JAVASCRIPT ANIMATIONS -->
   <script>
     // Animation fade-in au scroll
     const elements = document.querySelectorAll('.fade-in');
-
     const observer = new IntersectionObserver(function(entries) {
       entries.forEach(function(entry) {
         if (entry.isIntersecting) {
