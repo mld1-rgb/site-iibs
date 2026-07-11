@@ -7,21 +7,21 @@
      <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-   
-     <header class="bg-white/ fixed top-0 left-0 right-0 z-20 rounded-lg  backdrop-blur-md shadow-xl w-[80%] ml-40 mt-2">
+
+     <header class="bg-white/90 fixed top-0 left-0 right-0 z-20 rounded-lg backdrop-blur-md shadow-xl w-[95%] sm:w-[90%] lg:w-[80%] mx-auto lg:ml-40 mt-2">
     <div class="flex items-center justify-between h-14 px-4 sm:px-6 md:px-12">
       <div class="flex items-center gap-2">
-        <img src="IIBS.png" alt="Logo IIBS" class="w-14 h-10 rounded object-cover">
-        <span class="text-blue-900 font-bold text-xl  ">IIBS EVENTS</span>
+        <img src="IIBS.png" alt="Logo IIBS" class="w-12 h-9 sm:w-14 sm:h-10 rounded object-cover">
+        <span class="text-blue-900 font-bold text-base sm:text-xl">IIBS EVENTS</span>
       </div>
 
       <!-- nav desktop, cachee sur mobile/tablette -->
       <nav class="hidden lg:flex items-center gap-8">
-        <a href="index.html" class="text-black text-blue-900 text-sm font-bold">Accueil</a>
+        <a href="index.html" class="text-blue-900 text-sm font-bold">Accueil</a>
         <a href="agenda.html" class="text-blue-900 text-sm font-bold">Agenda</a>
-        <a href="evenement.html" class="text-black text-blue-900 text-sm font-bold">Evenement</a>
-        <a href="actualites.html" class="text-black text-blue-900 text-sm font-bold">Actualites</a>
-         <a href="contact.html" class="text-black text-blue-900 text-sm font-bold">Contact</a>
+        <a href="evenement.html" class="text-blue-900 text-sm font-bold">Evenement</a>
+        <a href="actualites.html" class="text-blue-900 text-sm font-bold">Actualites</a>
+        <a href="contact.html" class="text-blue-900 text-sm font-bold">Contact</a>
       </nav>
 
       <a href="inscription.html" class="hidden lg:inline-block bg-blue-950 text-white text-sm font-bold px-5 py-2 rounded-xl">
@@ -29,7 +29,7 @@
       </a>
 
       <!-- bouton hamburger, visible sur mobile/tablette -->
-      <button id="menu-btn" class="lg:hidden text-white" aria-label="Ouvrir le menu">
+      <button id="menu-btn" class="lg:hidden text-blue-900" aria-label="Ouvrir le menu">
         <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -40,19 +40,19 @@
     </div>
 
     <!-- menu mobile/tablette deroulant -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-blue-950 border-t border-blue-800 px-4 sm:px-6 py-4 space-y-3">
-      <a href="index.html" class="text-black text-blue-900 text-sm font-bold">Accueil</a>
-        <a href="agenda.html" class="text-blue-900 text-sm font-bold">Agenda</a>
-        <a href="evenement.html" class="text-black text-blue-900 text-sm font-bold">Evenement</a>
-        <a href="actualites.html" class="text-black text-blue-900 text-sm font-bold">Actualites</a>
-         <a href="contact.html" class="text-black text-blue-900 text-sm font-bold">Contact</a>
+    <div id="mobile-menu" class="hidden lg:hidden bg-blue-950 rounded-b-lg border-t border-blue-800 px-4 sm:px-6 py-4 space-y-3 flex flex-col">
+      <a href="index.html" class="text-white text-sm font-bold">Accueil</a>
+      <a href="agenda.html" class="text-white text-sm font-bold">Agenda</a>
+      <a href="evenement.html" class="text-white text-sm font-bold">Evenement</a>
+      <a href="actualites.html" class="text-white text-sm font-bold">Actualites</a>
+      <a href="contact.html" class="text-white text-sm font-bold">Contact</a>
 
-      <a href="inscription.html" class="hidden lg:inline-block bg-blue-950 text-white text-sm font-bold px-5 py-2 rounded-xl">
+      <a href="inscription.html" class="inline-block bg-white text-blue-950 text-sm font-bold px-5 py-2 rounded-xl text-center">
         S'inscrire
       </a>
     </div>
   </header>
-  <div class="h-14"></div>
+  <div class="h-16 sm:h-14"></div>
   <br class="hidden sm:block"><br class="hidden sm:block">
 
   <!--PARTIE 1-->
@@ -70,9 +70,11 @@
           <p class="text-gray-400 text-xs mb-1">Amphi A · 08h00</p>
           <h3 class="font-bold text-gray-900">Hackathon IIBS 2026</h3>
           <p class="text-gray-500 text-xs mt-1">48h pour coder une solution innovante sur le theme de l'IA au service de l'education.</p>
-          <a href="detailjournee.html" class="inline-block border-2 border- text-gray-800 text-sm bg-gradient-to-r from-blue-950 to-purple-600  font-semibold px-7 py-2 rounded-lg bg-blue-950 text-white overflow-hidden ml-60 mt-10">
-        DETAILS →
-      </a>
+          <div class="flex justify-end mt-6">
+            <a href="detailjournee.html" class="inline-block text-sm bg-gradient-to-r from-blue-950 to-purple-600 font-semibold px-7 py-2 rounded-lg text-white text-center">
+              DETAILS →
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -86,9 +88,11 @@
           <p class="text-gray-400 text-xs mb-1">Amphi A · 10h00</p>
           <h3 class="font-bold text-gray-900">Journée Carrière & Networking</h3>
           <p class="text-gray-500 text-xs mt-1">faciliter l'insertion professionnelle, renforcer le réseau alumni.</p>
-          <a href="detailjournee.html" class="inline-block border-2 border- text-gray-800 text-sm  font-semibold px-7 py-2 rounded-lg bg-blue-950 text-white bg-gradient-to-r from-blue-950 to-purple-600 overflow-hidden ml-60 mt-10">
-        DETAILS →
-      </a>
+          <div class="flex justify-end mt-6">
+            <a href="detailjournee.html" class="inline-block text-sm font-semibold px-7 py-2 rounded-lg text-white bg-gradient-to-r from-blue-950 to-purple-600 text-center">
+              DETAILS →
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -109,9 +113,11 @@
           <p class="text-gray-400 text-xs mb-1">Amphi A · 10h00</p>
           <h3 class="font-bold text-gray-900">Nuit de l'IA — IIBS AI Night</h3>
           <p class="text-gray-500 text-xs mt-1">positionner IIBS comme une école à la pointe, créer du contenu partageable sur les réseaux.</p>
-          <a href="detailjournee.html" class="inline-block border-2 border- text-gray-800 text-sm  font-semibold px-7 py-2 rounded-lg bg-blue-950 bg-gradient-to-r from-blue-950 to-purple-600 text-white overflow-hidden ml-60 mt-10">
-        DETAILS →
-      </a>
+          <div class="flex justify-end mt-6">
+            <a href="detailjournee.html" class="inline-block text-sm font-semibold px-7 py-2 rounded-lg bg-gradient-to-r from-blue-950 to-purple-600 text-white text-center">
+              DETAILS →
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -125,9 +131,11 @@
           <p class="text-gray-400 text-xs mb-1">Amphi A · 08h00</p>
           <h3 class="font-bold text-gray-900">Startup Pitch Day</h3>
           <p class="text-gray-500 text-xs mt-1">développer l'esprit entrepreneurial, connecter les étudiants à l'écosystème startup de Dakar.</p>
-          <a href="detailjournee.html" class="inline-block border-2 border- text-gray-800 text-sm  font-semibold px-7 py-2 rounded-lg bg-blue-950 text-white overflow-hidden ml-60 mt-10 bg-gradient-to-r from-blue-950 to-purple-600">
-        DETAILS →
-      </a>
+          <div class="flex justify-end mt-6">
+            <a href="detailjournee.html" class="inline-block text-sm font-semibold px-7 py-2 rounded-lg text-white bg-gradient-to-r from-blue-950 to-purple-600 text-center">
+              DETAILS →
+            </a>
+          </div>
         </div>
       </div>
     </section>
