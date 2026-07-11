@@ -7,28 +7,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="">
-    <header class="bg-white/ fixed top-0 left-0 right-0 z-20 rounded-lg backdrop-blur-md shadow-xl w-[95%] sm:w-[90%] lg:w-[80%] mx-auto lg:ml-40 mt-2">
+    <header class="bg-white/ fixed top-0 left-0 right-0 z-20 rounded-xl  backdrop-blur-md shadow-xl w-[80%] ml-40 mt-2">
     <div class="flex items-center justify-between h-14 px-4 sm:px-6 md:px-12">
       <div class="flex items-center gap-2">
-        <img src="IIBS.png" alt="Logo IIBS" class="w-12 h-9 sm:w-14 sm:h-10 rounded object-cover">
-        <span class="text-blue-900 font-bold text-base sm:text-xl">IIBS EVENTS</span>
+        <img src="IIBS.png" alt="Logo IIBS" class="w-14 h-10 rounded object-cover">
+        <span class="text-blue-900 font-bold text-xl ">IIBS EVENTS</span>
       </div>
 
       <!-- nav desktop, cachee sur mobile/tablette -->
       <nav class="hidden lg:flex items-center gap-8">
-        <a href="index.html" class="text-blue-900 text-sm font-bold">Accueil</a>
+        <a href="index.html" class="text-black text-blue-900 text-sm font-bold">Accueil</a>
         <a href="agenda.html" class="text-blue-900 text-sm font-bold">Agenda</a>
-        <a href="evenement.html" class="text-blue-900 text-sm font-bold">Evenement</a>
-        <a href="actualites.html" class="text-blue-900 text-sm font-bold">Actualites</a>
-        <a href="contact.html" class="text-blue-900 text-sm font-bold">Contact</a>
+        <a href="evenement.html" class="text-black text-blue-900 text-sm font-bold">Evenement</a>
+        <a href="actualites.html" class="text-black text-blue-900 text-sm font-bold">Actualites</a>
+         
       </nav>
 
-      <a href="inscription.html" class="hidden lg:inline-block bg-blue-950 text-white text-sm font-bold px-5 py-2 rounded-xl">
+      <a href="inscription.html" class="hidden lg:inline-block bg-blue-950 text-white bg-gradient-to-r from-blue-950 to-purple-600 text-sm font-bold px-5 py-2 rounded-xl">
         S'inscrire
       </a>
 
       <!-- bouton hamburger, visible sur mobile/tablette -->
-      <button id="menu-btn" class="lg:hidden text-blue-900" aria-label="Ouvrir le menu">
+      <button id="menu-btn" class="lg:hidden text-white" aria-label="Ouvrir le menu">
         <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -39,68 +39,61 @@
     </div>
 
     <!-- menu mobile/tablette deroulant -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-blue-950 rounded-b-lg border-t border-blue-800 px-4 sm:px-6 py-4 space-y-3 flex flex-col">
-      <a href="index.html" class="text-white text-sm font-bold">Accueil</a>
-      <a href="agenda.html" class="text-white text-sm font-bold">Agenda</a>
-      <a href="evenement.html" class="text-white text-sm font-bold">Evenement</a>
-      <a href="actualites.html" class="text-white text-sm font-bold">Actualites</a>
-      <a href="contact.html" class="text-white text-sm font-bold">Contact</a>
+    <div id="mobile-menu" class="hidden lg:hidden bg-blue-950 border-t border-blue-800 px-4 sm:px-6 py-4 space-y-3">
+      <a href="index.html" class="text-black text-blue-900 text-sm font-bold">Accueil</a>
+        <a href="agenda.html" class="text-blue-900 text-sm font-bold">Agenda</a>
+        <a href="evenement.html" class="text-black text-blue-900 text-sm font-bold">Evenement</a>
+        <a href="actualites.html" class="text-black text-blue-900 text-sm font-bold">Actualites</a>
+        
 
-      <a href="inscription.html" class="inline-block bg-white text-blue-950 text-sm font-bold px-5 py-2 rounded-xl text-center">
+      <a href="inscription.html" class="hidden lg:inline-block bg-blue-950 text-white text-sm font-bold px-5 py-2 rounded-xl">
         S'inscrire
       </a>
     </div>
   </header>
 
-  <div class="h-16 sm:h-14"></div>
-  <br class="hidden sm:block"><br class="hidden sm:block">
+  
+  
+  <section class="px-4 sm:px-6  mt-20">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-6 text-center">
+      <h2 class="text-xl font-bold bg-gradient-to-r from-blue-950 to-purple-600  text-white w-full h-20 bg-black">  <strong>Agenda</strong> <br>  </h2>
+      </div>
+<br><br><br><br>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
 
-  <section class="px-4 sm:px-6 lg:px-12">
-    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-6">
-      <h2 class="text-xl font-bold">Agenda</h2>
-    </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-      <div class="rounded-xl overflow-hidden border border-gray-200 flex flex-col">
+      <div class="rounded-xl overflow-hidden border border-gray-200">
         <img src="ia et metiers de demain.jpg" alt="" class="w-full h-40 object-cover bg-gray-200">
-        <div class="p-3 flex flex-col flex-1">
-          <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2 py-0.5 rounded-full self-start">Conference</span>
+        <div class="p-3">
+          <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2 py-0.5 rounded-full">Conference</span>
           <p class="text-gray-800 text-xs font-semibold mt-2">IA & METIERS DE DEMAIN</p>
           <p class="text-gray-400 text-xs mt-1">22 Jan · Salle 01</p>
-          <div class="flex justify-end mt-4">
-            <a href="detailjournee.html" class="inline-block bg-gradient-to-r from-blue-950 to-purple-600 text-sm font-semibold px-7 py-2 rounded-lg text-white text-center">
-              DETAILS →
-            </a>
-          </div>
+           <a href="Detail1.html" class="inline-block bg-gradient-to-r from-blue-950 to-purple-600 border-2 border- text-gray-800 text-sm  font-semibold px-7 py-2 rounded-lg bg-blue-950 text-white overflow-hidden ml-60 mt-10">
+        DETAILS ➕
+      </a>
         </div>
       </div>
 
-      <div class="rounded-xl overflow-hidden border border-gray-200 flex flex-col">
+      <div class="rounded-xl overflow-hidden border border-gray-200">
         <img src="git & github.jpg" alt="" class="w-full h-40 object-cover bg-gray-200">
-        <div class="p-3 flex flex-col flex-1">
-          <span class="bg-orange-100 text-orange-600 text-xs font-semibold px-2 py-0.5 rounded-full self-start">Atelier</span>
+        <div class="p-3">
+          <span class="bg-orange-100 text-orange-600 text-xs font-semibold px-2 py-0.5 rounded-full">Atelier</span>
           <p class="text-gray-800 text-xs font-semibold mt-2">Atelier Git & Github</p>
           <p class="text-gray-400 text-xs mt-1">5 Fev · salle 12</p>
-          <div class="flex justify-end mt-4">
-            <a href="detailjournee.html" class="inline-block bg-gradient-to-r from-blue-950 to-purple-600 text-sm font-semibold px-7 py-2 rounded-lg text-white text-center">
-              DETAILS →
-            </a>
-          </div>
+          <a href="Detail2.html" class="inline-block bg-gradient-to-r from-blue-950 to-purple-600 border-2 border- text-gray-800 text-sm  font-semibold px-7 py-2 rounded-lg bg-blue-950 text-white overflow-hidden items-center ml-60 mt-10">
+        DETAILS ➕
+      </a>
         </div>
       </div>
 
-      <div class="rounded-xl overflow-hidden border border-gray-200 flex flex-col">
+      <div class="rounded-xl overflow-hidden border border-gray-200">
         <img src="jpoverte.jpg" alt="" class="w-full h-40 object-cover bg-gray-200">
-        <div class="p-3 flex flex-col flex-1">
-          <span class="bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5 rounded-full self-start">Campus</span>
+        <div class="p-3">
+          <span class="bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5 rounded-full">Campus</span>
           <p class="text-gray-800 text-xs font-semibold mt-2">JOURNEE PORTES OUVERTES</p>
           <p class="text-gray-400 text-xs mt-1">8 Fev · Campus IIBS</p>
-          <div class="flex justify-end mt-4">
-            <a href="detailjournee.html" class="inline-block bg-gradient-to-r from-blue-950 to-purple-600 text-sm font-semibold px-7 py-2 rounded-lg text-white text-center">
-              DETAILS →
-            </a>
-          </div>
+          <a href="Detail3.html" class="inline-block bg-gradient-to-r from-blue-950 to-purple-600 border-2 border- text-gray-800 text-sm  font-semibold px-7 py-2 rounded-lg bg-blue-950 text-white overflow-hidden ml-60 mt-10">
+        DETAILS ➕
+      </a>
         </div>
       </div>
     </div>
@@ -108,53 +101,53 @@
 
   <br><br><br>
 
-  <section class="px-4 sm:px-6 lg:px-12">
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+ <section class="px-4 sm:px-6 lg:">
+   
 
-      <div class="rounded-xl overflow-hidden border border-gray-200 flex flex-col">
-        <img src="ia et metiers de demain.jpg" alt="" class="w-full h-40 object-cover bg-gray-200">
-        <div class="p-3 flex flex-col flex-1">
-          <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2 py-0.5 rounded-full self-start">Conference</span>
-          <p class="text-gray-800 text-xs font-semibold mt-2">IA & METIERS DE DEMAIN</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+
+      <div class="rounded-xl overflow-hidden border border-gray-200">
+        <img src="https://img.freepik.com/photos-premium/etudiants-diplomes-universite-graduation-day-concept-felicitations-aux-diplomes-ecole-generative-ai_90099-1743.jpg?w=2000" alt="" class="w-full h-40 object-cover bg-gray-200">
+        <div class="p-3">
+          <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2 py-0.5 rounded-full">Carriere</span>
+          <p class="text-gray-800 text-xs font-semibold mt-2">Conference D'un Ancien d'IIBS</p>
           <p class="text-gray-400 text-xs mt-1">22 Jan · Salle 01</p>
-          <div class="flex justify-end mt-4">
-            <a href="detailjournee.html" class="inline-block bg-gradient-to-r from-blue-950 to-purple-600 text-sm font-semibold px-7 py-2 rounded-lg text-white text-center">
-              DETAILS →
-            </a>
-          </div>
+           <a href="Detail4.html" class="inline-block bg-gradient-to-r from-blue-950 to-purple-600 border-2 border- text-gray-800 text-sm  font-semibold px-7 py-2 rounded-lg bg-blue-950 text-white overflow-hidden ml-60 mt-10">
+        DETAILS ➕
+      </a>
         </div>
       </div>
 
-      <div class="rounded-xl overflow-hidden border border-gray-200 flex flex-col">
-        <img src="git & github.jpg" alt="" class="w-full h-40 object-cover bg-gray-200">
-        <div class="p-3 flex flex-col flex-1">
-          <span class="bg-orange-100 text-orange-600 text-xs font-semibold px-2 py-0.5 rounded-full self-start">Atelier</span>
-          <p class="text-gray-800 text-xs font-semibold mt-2">Atelier Git & Github</p>
+      <div class="rounded-xl overflow-hidden border border-gray-200">
+        <img src="https://st3.depositphotos.com/1000423/18127/i/450/depositphotos_181278194-stock-photo-soccer-best-moments-mixed-media.jpg" alt="" class="w-full h-40 object-cover bg-gray-200">
+        <div class="p-3">
+          <span class="bg-orange-100 text-orange-600 text-xs font-semibold px-2 py-0.5 rounded-full">Competition</span>
+          <p class="text-gray-800 text-xs font-semibold mt-2">Match entre Etudiants</p>
           <p class="text-gray-400 text-xs mt-1">5 Fev · salle 12</p>
-          <div class="flex justify-end mt-4">
-            <a href="detailjournee.html" class="inline-block bg-gradient-to-r from-blue-950 to-purple-600 text-sm font-semibold px-7 py-2 rounded-lg text-white text-center">
-              DETAILS →
-            </a>
-          </div>
+          <a href="Detail5.html" class="inline-block bg-gradient-to-r from-blue-950 to-purple-600 border-2 border- text-gray-800 text-sm  font-semibold px-7 py-2 rounded-lg bg-blue-950 text-white overflow-hidden items-center ml-60 mt-10">
+        DETAILS ➕
+      </a>
         </div>
       </div>
 
-      <div class="rounded-xl overflow-hidden border border-gray-200 flex flex-col">
-        <img src="jpoverte.jpg" alt="" class="w-full h-40 object-cover bg-gray-200">
-        <div class="p-3 flex flex-col flex-1">
-          <span class="bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5 rounded-full self-start">Campus</span>
-          <p class="text-gray-800 text-xs font-semibold mt-2">JOURNEE PORTES OUVERTES</p>
+      <div class="rounded-xl overflow-hidden border border-gray-200">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.9m0H9LMTuNQm-hylWvaAcAHaE-?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="" class="w-full h-40 object-cover bg-gray-200">
+        <div class="p-3">
+          <span class="bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5 rounded-full">Journee portes ouvertes</span>
+          <p class="text-gray-800 text-xs font-semibold mt-2">Presentation du Campus</p>
           <p class="text-gray-400 text-xs mt-1">8 Fev · Campus IIBS</p>
-          <div class="flex justify-end mt-4">
-            <a href="detailjournee.html" class="inline-block bg-gradient-to-r from-blue-950 to-purple-600 text-sm font-semibold px-7 py-2 rounded-lg text-white text-center">
-              DETAILS →
-            </a>
-          </div>
+          <a href="Detail6.html" class="inline-block bg-gradient-to-r from-blue-950 to-purple-600 border-2 border- text-gray-800 text-sm  font-semibold px-7 py-2 rounded-lg bg-blue-950 text-white overflow-hidden ml-60 mt-10">
+        DETAILS ➕
+      </a>
         </div>
       </div>
     </div>
   </section>
+    
+   
+
+  
 
   <br><br><br>
 

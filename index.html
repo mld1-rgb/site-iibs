@@ -7,31 +7,31 @@
   <script src="https://cdn.tailwindcss.com"></script>
  
 </head>
-<body class="bg-white" id="accueil">
+<body class="bg-white mx-45" id="accueil">
 
   <!-- partie 1 -->
-  <header class="bg-white/ fixed top-0 left-0 right-0 z-20 rounded-xl backdrop-blur-md shadow-xl w-[95%] sm:w-[90%] lg:w-[80%] mx-auto lg:ml-40 mt-2">
+  <header class="bg-white/ fixed top-0 left-0 right-0 z-20 rounded-xl  backdrop-blur-md shadow-xl w-[80%] ml-40 mt-2">
     <div class="flex items-center justify-between h-14 px-4 sm:px-6 md:px-12">
       <div class="flex items-center gap-2">
-        <img src="IIBS.png" alt="Logo IIBS" class="w-12 h-9 sm:w-14 sm:h-10 rounded object-cover">
-        <span class="text-blue-900 font-bold text-base sm:text-xl">IIBS EVENTS</span>
+        <img src="IIBS.png" alt="Logo IIBS" class="w-14 h-10 rounded object-cover">
+        <span class="text-blue-900 font-bold text-xl ">IIBS EVENTS</span>
       </div>
 
       <!-- nav desktop, cachee sur mobile/tablette -->
       <nav class="hidden lg:flex items-center gap-8">
-        <a href="index.html" class="text-blue-900 text-sm font-bold">Accueil</a>
+        <a href="index.html" class="text-black text-blue-900 text-sm font-bold">Accueil</a>
         <a href="agenda.html" class="text-blue-900 text-sm font-bold">Agenda</a>
-        <a href="evenement.html" class="text-blue-900 text-sm font-bold">Evenement</a>
-        <a href="actualites.html" class="text-blue-900 text-sm font-bold">Actualites</a>
-        <a href="contact.html" class="text-blue-900 text-sm font-bold">Contact</a>
+        <a href="evenement.html" class="text-black text-blue-900 text-sm font-bold">Evenement</a>
+        <a href="actualites.html" class="text-black text-blue-900 text-sm font-bold">Actualites</a>
+         
       </nav>
 
-      <a href="inscription.html" class="hidden lg:inline-block bg-blue-950 text-white text-sm font-bold px-5 py-2 rounded-xl">
+      <a href="inscription.html" class="hidden lg:inline-block bg-blue-950 text-white bg-gradient-to-r from-blue-950 to-purple-600 text-sm font-bold px-5 py-2 rounded-xl">
         S'inscrire
       </a>
 
       <!-- bouton hamburger, visible sur mobile/tablette -->
-      <button id="menu-btn" class="lg:hidden text-blue-900" aria-label="Ouvrir le menu">
+      <button id="menu-btn" class="lg:hidden text-white" aria-label="Ouvrir le menu">
         <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -42,31 +42,31 @@
     </div>
 
     <!-- menu mobile/tablette deroulant -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-blue-950 rounded-b-xl border-t border-blue-800 px-4 sm:px-6 py-4 space-y-3 flex flex-col">
-      <a href="index.html" class="text-white text-sm font-bold">Accueil</a>
-      <a href="agenda.html" class="text-white text-sm font-bold">Agenda</a>
-      <a href="evenement.html" class="text-white text-sm font-bold">Evenement</a>
-      <a href="actualites.html" class="text-white text-sm font-bold">Actualites</a>
-      <a href="contact.html" class="text-white text-sm font-bold">Contact</a>
+    <div id="mobile-menu" class="hidden lg:hidden bg-blue-950 border-t border-blue-800 px-4 sm:px-6 py-4 space-y-3">
+      <a href="index.html" class="text-black text-blue-900 text-sm font-bold">Accueil</a>
+        <a href="agenda.html" class="text-blue-900 text-sm font-bold">Agenda</a>
+        <a href="evenement.html" class="text-black text-blue-900 text-sm font-bold">Evenement</a>
+        <a href="actualites.html" class="text-black text-blue-900 text-sm font-bold">Actualites</a>
+        
 
-      <a href="inscription.html" class="inline-block bg-white text-blue-950 text-sm font-bold px-5 py-2 rounded-xl text-center">
+      <a href="inscription.html" class="hidden lg:inline-block bg-blue-950 text-white text-sm font-bold px-5 py-2 rounded-xl">
         S'inscrire
       </a>
     </div>
   </header>
 
   <!-- partie 2 -->
-  <section class="bg-black px-4 sm:px-6 md:px-12 pt-28 sm:pt-24 pb-12">
-    <div class="fade-in inline-block border-2 border-blue-400 bg-gradient-to-r from-blue-950 to-purple-600 text-blue-400 text-xs sm:text-xl font-bold px-4 py-1 rounded-full mb-6">
+  <section class="bg-black px-4 sm:px-6 md:px-12 pt-24 pb-12 ">
+    <div class="fade-in inline-block border-2 border-blue-400 text-blue-400 text-xl font-bold bg-gradient-to-r from-blue-950 to-purple-600 px-4 py-1 rounded-full mb-6">
       Annee Academique 2025-2026
     </div>
-    <h1 class="fade-in text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-1">Vivez l'experience</h1>
-    <h1 class="fade-in text-blue-500 text-2xl sm:text-3xl md:text-4xl font-bold mb-6">IIBS Autrement</h1>
+    <h1 class="fade-in text-white text-3xl md:text-4xl font-bold mb-1">Vivez l'experience</h1>
+    <h1 class="fade-in text-blue-500 text-3xl md:text-4xl font-bold mb-6">IIBS Autrement</h1>
     <p class="fade-in text-white text-sm mb-10 max-w-xl">
       Conférences, hackathons, ateliers, journées portes ouvertes — tous les événements de votre école réunis en un seul endroit.
     </p>
     <div class="fade-in flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-      <a href="evenement.html" class="flex items-center justify-center bg-gradient-to-r from-blue-950 to-purple-600 gap-2 text-white text-sm font-semibold px-6 py-2.5 rounded-full">
+      <a href="evenement.html" class="flex items-center justify-center bg-gradient-to-r from-blue-950 to-purple-600 gap-2 bg-blue-700 text-white text-sm font-semibold px-6 py-2.5 rounded-full">
         Voir les evenements →
       </a>
       <a href="inscription.html" class="bg-white text-blue-950 text-sm font-bold px-6 py-2.5 rounded-full text-center">
@@ -77,23 +77,27 @@
   </section>
 
   <!-- STATS -->
-  <section class="px-4 sm:px-6 md:px-12 py-8 bg-gradient-to-r from-blue-950 to-purple-600">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-4">
+  <section class="bg-blue-700 px-2 sm:px-6  bg-gradient-to-r from-blue-950 to-purple-600 md: ">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-y- gap-x-">
       <div class="text-white">
-        <p class="text-2xl sm:text-3xl font-bold text-center">24+</p>
-        <p class="text-white text-sm sm:text-lg text-center mt-1">Evenements cette annee</p>
+        <p class="text-3xl font-bold text-center">5+</p>
+        <br>
+        <p class="text-white text-lg  text-center">Evenements cette annee</p>
       </div>
       <div class="text-white">
-        <p class="text-2xl sm:text-3xl font-bold text-center">1200</p>
-        <p class="text-white text-sm sm:text-lg text-center mt-1">Participants</p>
+        <p class="text-3xl font-bold text-center">100</p>
+         <br>
+        <p class="text-white text-lg  text-center">Participants</p>
       </div>
       <div class="text-white">
-        <p class="text-2xl sm:text-3xl font-bold text-center">38</p>
-        <p class="text-white text-sm sm:text-lg text-center mt-1">Intervenants</p>
+        <p class="text-3xl font-bold text-center">12</p>
+         <br>
+        <p class="text-white text-lg  text-center">Intervenants</p>
       </div>
       <div class="text-white">
-        <p class="text-2xl sm:text-3xl font-bold text-center">6</p>
-        <p class="text-white text-sm sm:text-lg text-center mt-1">Categories</p>
+        <p class="text-3xl font-bold text-center ">6</p>
+         <br>
+        <p class="text-white text-lg  text-center text-xl">Categories</p>
       </div>
     </div>
   </section>
@@ -106,21 +110,27 @@
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-      <div class="rounded-xl border border-gray-200 overflow-hidden">
-        <img src="ia et metiers de demain.jpg" alt="IA et metiers de demain" class="w-full h-40 object-cover bg-gray-200">
+      <div class="rounded-xl border border-gray-200">
+        <img src="ia et metiers de demain.jpg" alt="IA et metiers de demain" class="w-full h-40 object-cover bg-gray-200 rounded-t-xl">
         <div class="p-3">
-          <span class="bg-blue-100 text-blue-700 text-xs font-bold px-2 py-0.5 rounded-full">Conference</span>
-          <p class="text-black text-lg sm:text-xl font-bold mt-2">IA & METIERS DE DEMAIN</p>
-          <p class="text-gray-400 text-xs font-bold mt-1">22 Jan · Salle 01</p>
+          <span class="bg-blue-100 text-blue-700 text-xs font-bold px-2 py-0.5 rounded-full ml-0">Conference</span>
+          <p class="text-black text-xl font-bold mt-2">IA & METIERS DE DEMAIN</p>
+          <p class="text-gray-400 text-xs mt-1 text-bold">22 Jan · Salle 01</p>
+<a href="Detail1.html" class="inline-block bg-gradient-to-r from-blue-950 to-purple-600 border-2 border- text-gray-800 text-sm  font-semibold px-7 py-2 rounded-lg bg-blue-950 text-white overflow-hidden ml-60 mt-10">
+        DETAILS →
+      </a>
         </div>
       </div>
 
-      <div class="rounded-xl border border-gray-200 overflow-hidden">
-        <img src="git & github.jpg" alt="Atelier Git et Github" class="w-full h-40 object-cover bg-gray-200">
+      <div class="rounded-xl border border-gray-200">
+        <img src="git & github.jpg" alt="Atelier Git et Github" class="w-full h-40 object-cover bg-gray-200 rounded-t-xl">
         <div class="p-3">
           <span class="bg-orange-100 text-orange-600 text-xs font-semibold px-2 py-0.5 rounded-full">Atelier</span>
-          <p class="text-black text-lg sm:text-xl font-bold mt-2">Atelier Git & Github</p>
-          <p class="text-gray-400 text-xs font-bold mt-1">5 Fev · Salle 12</p>
+          <p class="text-black text-xl font-bold mt-2">Atelier Git & Github</p>
+          <p class="text-gray-400 text-xs mt-1 text-bold">5 Fev · Salle 12</p>
+           <a href="Detail2.html" class="inline-block bg-gradient-to-r from-blue-950 to-purple-600 border-2 border- text-gray-800 text-sm  font-semibold px-7 py-2 rounded-lg bg-blue-950 text-white overflow-hidden ml-60 mt-10">
+        DETAILS →
+      </a>
         </div>
       </div>
 
@@ -128,8 +138,12 @@
         <img src="jpoverte.jpg" alt="Journee portes ouvertes" class="w-full h-40 object-cover bg-gray-200">
         <div class="p-3">
           <span class="bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5 rounded-full">Campus</span>
-          <p class="text-black text-lg sm:text-xl font-bold mt-2">JOURNEE PORTES OUVERTES</p>
-          <p class="text-gray-400 text-xs font-bold mt-1">8 Fev · Campus IIBS</p>
+          <p class="text-black text-xl font-bold mt-2">JOURNEE PORTES OUVERTES</p>
+          <p class="text-gray-400 text-xs mt-1 text-bold">8 Fev · Campus IIBS</p>
+          <a href="Detail3.html" class="inline-block bg-gradient-to-r from-blue-950 to-purple-600 border-2 border- text-gray-800 text-sm  font-semibold px-7 py-2 rounded-lg bg-blue-950 text-white overflow-hidden ml-60 mt-10">
+        DETAILS →
+      </a>
+            
         </div>
       </div>
 
@@ -142,19 +156,19 @@
       <h2 class="text-lg font-bold">Evenements</h2>
       <a href="evenement.html" class="text-blue-700 text-xs font-semibold">voir Tout</a>
     </div>
-    <div class="rounded-xl overflow-hidden border border-gray-200 bg-white max-w-2xl mx-auto md:max-w-none md:mx-0">
+    <div class="rounded-xl overflow-hidden border border-gray-200 bg-white max-w-2xl mx-auto md:max-w-none md:mx-0 ">
       <div>
         <img src="hackaton.jpg" alt="Hackathon IIBS 2026" class="w-full h-48 md:h-56 object-cover bg-gray-300">
       </div>
       <div class="p-5 bg-white">
         <p class="text-black text-xs mb-1">Amphi A · 08h00</p>
-        <h3 class="font-bold text-black text-lg sm:text-xl">Hackathon IIBS 2026</h3>
+        <h3 class="font-bold text-black text-xl">Hackathon IIBS 2026</h3>
         <p class="text-gray-700 text-xs mt-1">48h pour coder une solution innovante sur le theme de l'IA au service de l'education.</p>
-      </div>
+         </div>
     </div>
 
     <div class="text-center mt-8">
-      <a href="evenement.html" class="inline-block bg-gradient-to-r from-blue-950 to-purple-600 text-white text-base sm:text-xl font-bold px-6 sm:px-10 py-3 rounded-full">
+      <a href="evenement.html" class="inline-block border-2 bg-gradient-to-r from-blue-950 to-purple-600 border- text-gray-800 text-xl font-bold px-10 py-3 rounded-full bg-blue-900 text-white overflow-hidden">
         Voir tout les evenements →
       </a>
     </div>
@@ -169,21 +183,21 @@
 
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
 
-      <div class="rounded-xl overflow-hidden border border-gray-200 bg-gradient-to-r from-blue-950 to-purple-600">
+      <div class="rounded-xl overflow-hidden border border-gray-200 bg-blue-950 bg-gradient-to-r from-blue-950 to-purple-600">
         <div class="flex items-center justify-center h-28 text-5xl">🎤</div>
         <div class="p-2">
           <p class="text-white text-xs font-bold mt-1 text-center">CONFERENCE</p>
         </div>
       </div>
 
-      <div class="rounded-xl overflow-hidden border border-gray-200 bg-gradient-to-r from-blue-950 to-purple-600">
+      <div class="rounded-xl overflow-hidden border border-gray-200  bg-blue-950 bg-gradient-to-r from-blue-950 to-purple-600">
         <div class="flex items-center justify-center h-28 text-5xl">🛠️</div>
         <div class="p-2">
           <p class="text-white text-xs font-bold mt-1 text-center">ATELIER</p>
         </div>
       </div>
 
-      <div class="rounded-xl overflow-hidden border border-gray-200 bg-gradient-to-r from-blue-950 to-purple-600">
+      <div class="rounded-xl overflow-hidden border border-gray-200 bg-blue-950 bg-gradient-to-r from-blue-950 to-purple-600">
         <div class="flex items-center justify-center h-28 text-5xl">🏫</div>
         <div class="p-2">
           <p class="text-white text-xs font-bold mt-1 text-center">CAMPUS</p>
@@ -238,18 +252,6 @@
       observer.observe(el);
     });
 
-    // Menu hamburger mobile/tablette
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const iconOpen = document.getElementById('icon-open');
-    const iconClose = document.getElementById('icon-close');
-
-    menuBtn.addEventListener('click', function() {
-      mobileMenu.classList.toggle('hidden');
-      iconOpen.classList.toggle('hidden');
-      iconClose.classList.toggle('hidden');
-    });
-
     // Scroll fluide pour les liens d'ancre
     document.querySelectorAll('a[href^="#"]').forEach(function(link) {
       link.addEventListener('click', function(e) {
@@ -263,6 +265,18 @@
         iconOpen.classList.remove('hidden');
         iconClose.classList.add('hidden');
       });
+    });
+
+    // Menu hamburger mobile/tablette
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('icon-open');
+    const iconClose = document.getElementById('icon-close');
+
+    menuBtn.addEventListener('click', function() {
+      mobileMenu.classList.toggle('hidden');
+      iconOpen.classList.toggle('hidden');
+      iconClose.classList.toggle('hidden');
     });
   </script>
 
